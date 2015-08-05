@@ -32,14 +32,14 @@ if ! shopt -oq posix; then
 fi
 
 
-# ALIASES
+# Aliases
 alias diff='colordiff'
 alias ping='ping -c 5'
 alias fastping='ping -c 100 -s.2'
-alias countf='ls -l | grep ^- | wc -l'
-alias countd='ls -l | grep ^d | wc -l'
+alias cntfiles='ls -l | grep ^- | wc -l'
+alias cntdirs='ls -l | grep ^d | wc -l'
 
 
-# This loads nvm
+# Load NVM
 export NVM_DIR="/home/diogoleitao/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
