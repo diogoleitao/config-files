@@ -82,3 +82,4 @@ if [ -f ~/.bash_config ]; then
     . ~/.bash_config
 fi
 
+fortune
