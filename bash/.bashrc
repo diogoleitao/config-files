@@ -83,3 +83,22 @@ if [ -f ~/.bash_config ]; then
 fi
 
 fortune
+
+export NVM_DIR="/home/diogoleitao/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+function parse_git_branch () {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+RED="\[\033[0;31m\]"
+YELLOW="\[\033[0;33m\]"
+GREEN="\[\033[0;32m\]"
+NO_COLOR="\[\033[0m\]"
+
+PS1="$RED\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
+PATH="/home/diogoleitao/perl5/bin${PATH+:}${PATH}"; export PATH;
+PERL5LIB="/home/diogoleitao/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/diogoleitao/perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/diogoleitao/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/diogoleitao/perl5"; export PERL_MM_OPT;

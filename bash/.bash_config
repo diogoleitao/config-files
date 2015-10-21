@@ -1,7 +1,7 @@
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
+    alias ls='ls --color=auto --block-size=MB'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -38,8 +38,17 @@ alias ping='ping -c 5'
 alias fastping='ping -c 100 -s.2'
 alias cntfiles='ls -l | grep ^- | wc -l'
 alias cntdirs='ls -l | grep ^d | wc -l'
+alias decodecrt='openssl x509 -text -noout -in'
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get upgrade'
+alias distupgrade='sudo apt-get dist-upgrade'
+alias autoclean='sudo apt-get autoclean'
+alias autoremove='sudo apt-get autoremove'
 
 
 # Load NVM
 export NVM_DIR="/home/diogoleitao/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+export PAGER=most
+export HISTCONTROL=ignoredups
