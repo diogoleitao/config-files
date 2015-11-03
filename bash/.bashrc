@@ -82,7 +82,7 @@ if [ -f ~/.bash_config ]; then
     . ~/.bash_config
 fi
 
-fortune
+fortune | cowsay
 
 export NVM_DIR="/home/diogoleitao/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
