@@ -3,10 +3,11 @@
     "editor.rulers": [
         120
     ],
-    "python.pythonPath": "./venv/bin/python",
+    "python.pythonPath": "${workspaceFolder}/venv/bin/python",
     "python.autoComplete.extraPaths": [
-        "./venv",
-        "./venv/lib/python2.7/site-packages"
+        "${workspaceFolder}/venv",
+        // "${workspaceFolder}/venv/lib/python2.7/site-packages",
+        // "${workspaceFolder}/venv/lib/python3.6/site-packages"
     ],
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
