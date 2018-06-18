@@ -5,7 +5,7 @@
     ],
     "python.pythonPath": "${workspaceFolder}/venv/bin/python",
     "python.autoComplete.extraPaths": [
-        "${workspaceFolder}/venv",
+        "${workspaceFolder}",
         // "${workspaceFolder}/venv/lib/python2.7/site-packages",
         // "${workspaceFolder}/venv/lib/python3.6/site-packages"
     ],
