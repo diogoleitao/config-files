@@ -1,6 +1,7 @@
 alias activenv="source venv/bin/activate"
 alias cntdirs="ls -l | grep ^d | wc -l"
 alias cntfiles="ls -l | grep ^- | wc -l"
+alias gps="git push staging $(git_current_branch):master -f"
 alias grs="git remote show"
 alias gulog="git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short"
 alias ping="ping -c 5"
