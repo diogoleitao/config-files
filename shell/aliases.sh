@@ -3,6 +3,7 @@ alias cntfiles='ls -l | grep ^- | wc -l'
 alias knock_knock='lsof -i'
 alias ping='ping -c 5'
 alias reload_zsh='source ~/.zshrc'
+alias rmrf='rm -rf'
 
 # Git
 alias gps='git push staging $(git_current_branch):master -f'
