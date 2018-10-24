@@ -6,7 +6,9 @@ alias reload_zsh='source ~/.zshrc'
 alias rmrf='rm -rf'
 
 # Git
-alias gps='git push staging $(git_current_branch):master -f'
+alias gpdev='git push development $(git_current_branch):master -f'
+alias gpprd='git push production $(git_current_branch):master -f'
+alias gpsta='git push staging $(git_current_branch):master -f'
 alias grs='git remote show'
 alias gs='git stash'
 alias gsp='git stash -p'
