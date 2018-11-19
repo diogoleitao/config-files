@@ -18,6 +18,7 @@ alias gulog='git log --pretty=format:"%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %
 alias htail='heroku logs --tail --remote'
 
 # Mac
+alias bi='brew install'
 alias reset-cam='sudo killall VDCAssistant && sudo killall AppleCameraAssistant'
 
 # Python

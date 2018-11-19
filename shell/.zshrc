@@ -109,9 +109,5 @@ export PATH="$HOME/portables:$PATH"
 export NVM_DIR="$HOME/.nvm"
 source "/usr/local/opt/nvm/nvm.sh"
 
-# Bootstrap thefuck
-eval $(thefuck --alias)
-
 # Bootstrap pyenv
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
