@@ -15,6 +15,11 @@ alias gsp='git stash -p'
 alias gulog='git log --pretty=format:"%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s" --date=short'
 
 # Heroku
+alias haa='heroku accounts:add'
+alias hac='heroku accounts:current'
+alias hal='heroku accounts'
+alias har='heroku accounts:remove'
+alias has='heroku accounts:set'
 alias htail='heroku logs --tail --remote'
 
 # Mac
