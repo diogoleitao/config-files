@@ -26,6 +26,9 @@ alias htail='heroku logs --tail --remote'
 alias bi='brew install'
 alias reset-cam='sudo killall VDCAssistant && sudo killall AppleCameraAssistant'
 
+# NPM
+alias global_packages='npm list -g --depth 0'
+
 # Python
 alias activenv='source venv/bin/activate'
 alias fab='python2 -m fabric'
