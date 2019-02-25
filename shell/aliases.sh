@@ -8,6 +8,7 @@ alias rmrf='rm -rf'
 # Docker
 alias dcb='docker-compose build'
 alias dcdo='docker-compose down'
+alias dclog='docker-compose logs'
 alias dcps='docker-compose ps'
 alias dcup='docker-compose up -d'
 alias dkb='docker build'
