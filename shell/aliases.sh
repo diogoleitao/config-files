@@ -5,6 +5,15 @@ alias ping='ping -c 5'
 alias reload_zsh='source ~/.zshrc'
 alias rmrf='rm -rf'
 
+# Docker
+alias dcb='docker-compose build'
+alias dcdo='docker-compose down'
+alias dcps='docker-compose ps'
+alias dcup='docker-compose up -d'
+alias dkb='docker build'
+alias dkcl='docker container ls'
+alias dkil='docker image ls'
+
 # Git
 alias gpdev='git push development $(git_current_branch):master -f'
 alias gpprd='git push production $(git_current_branch):master -f'
