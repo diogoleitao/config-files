@@ -1,3 +1,4 @@
+## Git
 # Fetch all branches from all repos parent directory
 gottafetchemall() {
   echo "Gotta fetch'em all...!"
@@ -14,10 +15,21 @@ gottafetchemall() {
   done
 }
 
+## Python
 # Activate venv when present
 cd () {
   builtin cd $1;
   if [ -d "venv" ]; then
     source venv/bin/activate;
+  elif [ -d ".venv" ]; then
+    pipenv shell
   fi
+}
+
+# Clean all compiled byte-code cache files
+# Source: https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/python/python.plugin.zsh
+pyclean() {
+  find . -type f -name "*.py[co]" -delete;
+  find . -type d -name "__pycache__" -delete;
+  find . -type d -name ".mypy_cache" -delete;
 }
