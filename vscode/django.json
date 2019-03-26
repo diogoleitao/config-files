@@ -5,9 +5,9 @@
     ],
     "python.pythonPath": "${workspaceFolder}/venv/bin/python",
     "python.autoComplete.extraPaths": [
-        "${workspaceFolder}",
-        // "${workspaceFolder}/venv/lib/python2.7/site-packages",
-        // "${workspaceFolder}/venv/lib/python3.6/site-packages"
+        "${workspaceFolder}"
+        // "${workspaceFolder}/venv/lib/python/site-packages"
+        // "${workspaceFolder}/.venv/lib/python/site-packages"
     ],
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
