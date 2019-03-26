@@ -29,7 +29,7 @@ DISABLE_AUTO_UPDATE="true"
 DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -87,10 +87,7 @@ export LC_ALL=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Format prompt for zsh
-export DEFAULT_USER=`whoami`
-prompt_context(){}
-
+## Custom stuff
 # ZSH Syntax Highlighting
 source "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 zstyle ":completion:*" special-dirs true
@@ -108,3 +105,9 @@ export PATH="$HOME/portables:$PATH"
 # Bootstrap NVM
 export NVM_DIR="$HOME/.nvm"
 source "/usr/local/opt/nvm/nvm.sh"
+
+# Bootstrap pyenv
+eval "$(pyenv init -)"
+
+# Tell pipenv to install dependencies inside project folder
+export PIPENV_VENV_IN_PROJECT=1
