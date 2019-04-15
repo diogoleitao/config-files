@@ -1,18 +1,12 @@
 alias cntdirs='ls -l | grep ^d | wc -l'
 alias cntfiles='ls -l | grep ^- | wc -l'
 alias knock='lsof -i'
+alias listen_to='kafkacat -b localhost:9092 -C -t'
 alias ping='ping -c 5'
 alias reload_zsh='source ~/.zshrc'
 alias rmrf='rm -rf'
 
 # Docker
-alias dcb='docker-compose build'
-alias dcdo='docker-compose down'
-alias dclog='docker-compose logs'
-alias dcps='docker-compose ps'
-alias dcstart='docker-compose start'
-alias dcstop='docker-compose stop'
-alias dcup='docker-compose up -d'
 alias dkb='docker build'
 alias dkcl='docker container ls'
 alias dkil='docker image ls'
@@ -20,10 +14,16 @@ alias dklog='docker logs'
 alias dkps='docker ps'
 alias dkstop='docker stop'
 
+# docker-compose
+alias dcb='docker-compose build'
+alias dcdo='docker-compose down'
+alias dclogs='docker-compose logs -f'
+alias dcps='docker-compose ps'
+alias dcstart='docker-compose start'
+alias dcstop='docker-compose stop'
+alias dcup='docker-compose up -d'
+
 # Git
-alias gpdev='git push development $(git_current_branch):master -f'
-alias gpprd='git push production $(git_current_branch):master -f'
-alias gpsta='git push staging $(git_current_branch):master -f'
 alias grs='git remote show'
 alias gs='git stash'
 alias gsp='git stash -p'
@@ -35,17 +35,14 @@ alias hac='heroku accounts:current'
 alias hal='heroku accounts'
 alias har='heroku accounts:remove'
 alias has='heroku accounts:set'
-alias htail='heroku logs --tail --remote'
 
 # Mac
-alias bi='brew install'
 alias reset-cam='sudo killall VDCAssistant && sudo killall AppleCameraAssistant'
 
 # NPM
 alias global_packages='npm list -g --depth 0'
 
 # Python
-alias activenv='source venv/bin/activate'
 alias fab='python2 -m fabric'
 
 # React-Native CLI
