@@ -5,6 +5,7 @@ alias listen_to='kafkacat -b localhost:9092 -C -t'
 alias ping='ping -c 5'
 alias reload_zsh='source ~/.zshrc'
 alias rmrf='rm -rf'
+alias sourcenv='export $(cat .env | xargs)'
 
 # Docker
 alias dkb='docker build'
