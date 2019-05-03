@@ -28,6 +28,7 @@ alias grs='git remote show'
 alias gs='git stash'
 alias gsp='git stash -p'
 alias gulog='git log --pretty=format:"%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s" --date=short'
+alias gulc='git reset HEAD~'
 
 # Heroku
 alias haa='heroku accounts:add'
