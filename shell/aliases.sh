@@ -6,7 +6,6 @@ alias ping='ping -c 5'
 alias reload_zsh='source ~/.zshrc'
 alias rmrf='rm -rf'
 alias sourcenv='export $(cat .env | xargs)'
-alias sshh='ssh -i ~/.ssh/admin.key'
 
 # Docker
 alias dkb='docker build'
