@@ -40,6 +40,7 @@ alias har='heroku accounts:remove'
 alias has='heroku accounts:set'
 
 # Mac
+alias be='bundle exec'
 alias reset-cam='sudo killall VDCAssistant && sudo killall AppleCameraAssistant'
 
 # NPM
