@@ -51,7 +51,7 @@ ENABLE_CORRECTION="false"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew common-aliases git)
+plugins=(brew common-aliases git docker)
 
 # Bootstrap oh-my-zsh
 source $ZSH/oh-my-zsh.sh
