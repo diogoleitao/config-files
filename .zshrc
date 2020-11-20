@@ -29,7 +29,7 @@ DISABLE_AUTO_UPDATE="true"
 DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="false"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -87,7 +87,6 @@ export LC_ALL=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-## Custom stuff
 # ZSH Syntax Highlighting
 source "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 zstyle ":completion:*" special-dirs true
@@ -102,16 +101,14 @@ source "$HOME/repos/config-files/bootstrap.sh"
 # Add portables to path
 export PATH="$HOME/portables:$PATH"
 
-# Bootstrap NVM
+# NVM
 export NVM_DIR="$HOME/.nvm"
-source "/usr/local/opt/nvm/nvm.sh"
-
-# Bootstrap pyenv
-eval "$(pyenv init -)"
-
-# Tell pipenv to install dependencies inside project folder
-export PIPENV_VENV_IN_PROJECT=1
+[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"                    # Loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"  # Loads nvm bash_completion
 
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+export HISTSIZE=1000
+export SAVEHIST=1000
